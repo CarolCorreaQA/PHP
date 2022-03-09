@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Situação do Aluno</title>
+
+</head>
+
+<body>
+<div>
+	<h1>Digite na URL as notas do aluno</h1>
+	<h3>Verifique se ele está Aprovado ou Reprovado</h3>
+	
+	<?php
+	
+	$n1 = $_GET["a"];
+	$n2 = $_GET["b"];
+	$n3 = $_GET["c"];
+	$n4 = $_GET["d"];
+	
+	$media = ($n1+$n2+$n3+$n4)/4;
+	$res = $media>=7? " Aprovado" : " Reprovado";
+	echo "O aluno foi $res";
+		
+	?>
+	
+</div>
+</body>
+
+
+
+</html>
