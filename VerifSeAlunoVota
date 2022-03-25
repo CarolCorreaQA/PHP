@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="">
+	<meta charset="UTF-8"/>
+	<title> Tema </title>
+</head>
+
+<body>
+<div>
+
+	<?php
+	$a = isset($_GET["ano"])?$_GET["ano"]:1900;
+	$i = date("Y") - $a;
+	echo "Você nasceu em $a e tem $i anos.<br/><br/>";
+	if($i >= 18){
+  
+	$d = "Candidato pode dirigir!";	
+	$v = " Você já pode votar!";	
+  
+	}
+	else{
+	
+	$d = "Não está habilitado a dirigir.";	
+	$v = "Você ainda não pode votar.";
+	
+	}
+	Echo "$d <br/>";
+	echo "$v";
+  
+	?>
+
+</div>
+</body>
+</html>
